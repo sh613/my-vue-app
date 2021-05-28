@@ -29,11 +29,11 @@ export default {
       inputTodo: "",
       todos: [
         {
-          text: "ひき肉を300g買う",
+          text: "background-color",
           isDone: false,
         },
         {
-          text: "ホウレンソウを1束買う",
+          text: "",
           isDone: false,
         },
         {
@@ -94,7 +94,7 @@ export default {
 
 .todo__delete:hover {
   margin-left: 2rem;
-  background-color: #b2ae3b;
+  background-color: #3baeb2;
   border-radius: 5px;
 }
 </style>

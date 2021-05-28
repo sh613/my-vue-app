@@ -1,7 +1,10 @@
 <template>
   <div id="app">
+    <div>
+      <Header></Header>
+    </div>
     <div class="hello-wrold">
-      <img alt="Vue logo" src="./assets/logo.png" />
+      <img alt="Vue logo" src="./assets/hana.jpg" />
       <div class="hello-wrold__message">
         {{ message }}
       </div>
@@ -11,15 +14,17 @@
 </template>
 
 <script>
-import TodoList from "@/components/TodoList.vue"
+import Header from "@/components/header.vue"
+import TodoList from "@/components/Todolist.vue"
 export default {
   name: "App",
   components: {
+    Header,
     TodoList,
   },
   data: function () {
     return {
-      message: "WebExpert Course Vue Template",
+      message: "単語帳",
     }
   },
   methods: {},
@@ -31,16 +36,17 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: bisque;
 }
 </style>
 
 <style scoped>
 .hello-wrold {
-  margin-top: 60px;
+  margin-top: 100px;
   text-align: center;
 }
 
 .hello-wrold .hello-world__message {
-  color: #2c3e50;
+  color: #502c44;
 }
 </style>
